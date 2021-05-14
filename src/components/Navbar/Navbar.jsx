@@ -4,8 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Navbar/Navbar.css';
 import { Link } from "react-scroll";
 import Button from 'react-bootstrap/Button';
-import portfolioIcon from '@iconify-icons/bytesize/portfolio';
-import { Icon } from '@iconify/react';
 
 
 function Mynav() {
