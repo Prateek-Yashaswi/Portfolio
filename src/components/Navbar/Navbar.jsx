@@ -11,7 +11,7 @@ import { Icon } from '@iconify/react';
 function Mynav() {
     return (
         <ReactBootStrap.Navbar className="navbar-custom" collapseOnSelect expand="lg" variant="dark" sticky="top">
-            <ReactBootStrap.Navbar.Brand className='navbar-brand-text-custom'><span>Portfolio</span><Icon icon={portfolioIcon} className="portfolio-logo"/></ReactBootStrap.Navbar.Brand>
+            <ReactBootStrap.Navbar.Brand className='navbar-brand-text-custom'><span>Portfolio</span></ReactBootStrap.Navbar.Brand>
             <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
                 <ReactBootStrap.Nav className="ml-auto">
