@@ -6,9 +6,16 @@
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
+    "aos": "^2.3.4",
+    "bootstrap": "^4.6.0",
+    "emailjs-com": "^2.6.4",
     "react": "^17.0.2",
+    "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "react-router-hash-link": "^2.4.1",
     "react-scripts": "4.0.3",
+    "react-scroll": "^1.8.2",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
@@ -34,5 +41,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@iconify-icons/akar-icons": "^1.1.9",
+    "@iconify-icons/brandico": "^1.1.0",
+    "@iconify-icons/bytesize": "^1.1.0",
+    "@iconify-icons/cib": "^1.1.0",
+    "@iconify-icons/logos": "^1.1.9",
+    "@iconify-icons/vscode-icons": "^1.1.4",
+    "@iconify/react": "^1.1.4"
   }
 }

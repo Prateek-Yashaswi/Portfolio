@@ -1,0 +1,39 @@
+.navbar-brand-text-custom>span {
+    font-size: 3vw;
+    font-weight: bolder;
+    border-bottom: 1px solid white;
+}
+
+.portfolio-logo {
+    width: 50%;
+    margin-bottom: 3vh;
+    margin-left: 0vw;
+    height: 5rem;
+}
+
+.navbar-custom {
+    background-color: black;
+}
+
+.navbar-button-custom {
+    margin-right: 3vw;
+    background-color: black;
+    border: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-brand-text-custom>span {
+        font-size: 9vw;
+    }
+    .navbar-button-custom {
+        background-color: black;
+        border: 0;
+        margin-top: 3%;
+    }
+    .portfolio-logo {
+        width: 50%;
+        margin-bottom: 3vh;
+        margin-left: 2vw;
+        height: 4rem;
+    }
+}

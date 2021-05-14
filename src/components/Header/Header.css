@@ -1,0 +1,48 @@
+#home{
+    width: 100%;
+    top: 50vh;
+    height: 100vh;
+    display: table;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+}
+
+h4>span{
+    border-top: 1px solid white;
+    color: white;
+    font-size: 2vw;
+}
+.header{
+    display: table-cell;
+    vertical-align: middle;
+    text-align:center
+}
+.text{
+    color: white;
+}
+
+.header-text{
+    font-size: 7vh;
+    font-weight: bolder;
+    color: white;
+}
+
+.avatar {
+    margin: auto;
+    margin-bottom: 3vh;
+    background-image: url('../Header/prateek.jpg');
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+}
+
+@media (max-width: 1000px){
+    h4>span{
+        border-top: 1px solid white;
+        color: white;
+        font-size: 6vw;
+    }
+}

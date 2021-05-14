@@ -1,0 +1,127 @@
+#projects{
+    width: 100%;
+}
+
+#projects-header{
+    color: white;
+    text-align: center;
+}
+
+#projects-title{
+    border-bottom: 1px solid white;
+}
+
+#project-name{
+    display: flex;
+    flex-direction: row;
+}
+
+#more{
+    text-align: center;
+}
+
+#more>span{
+    text-align: center;
+    color: rgb(131, 131, 131);
+    font-size: 1vw;
+}
+
+#skin-cancer{
+    order: 1;
+    padding: 3%;
+    width: 33%;
+
+}
+
+#xray{
+    display: flex;
+    order: 2;
+    padding: 3%;
+    width: 33%;
+}
+.projects-names-jumbo{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-names-jumbo>h1{
+    display: flex;
+    order: 1;
+}
+
+.projects-names-jumbo>h1>span{
+    border-bottom: 1px solid white;
+    font-size: 1.5vw;
+}
+
+.projects-names-jumbo>p{
+    font-size: 1vw;
+    text-align: start;
+    order: 2;
+    margin-top: 6%;
+}
+
+
+#hway{
+    display: flex;
+    order: 3;
+    width: 33%;
+    padding: 3%;
+}
+
+@media (max-width:1000px) {
+    #projects{
+        width: 100%;
+        margin-top: 10vh;
+        display: block;
+    }
+
+    #project-name{
+        display: block;
+        width: 100%;
+    }
+
+    #skin-cancer{
+        display: block;
+        width: 100%;
+    
+    }
+    
+    #xray{
+        display: block;
+        width: 100%;
+    }
+
+    .projects-names-jumbo{
+        background-color: black;
+        color: white;
+        display: block;
+    }
+
+    .projects-names-jumbo>h1{
+        display: block;
+    }
+    
+    .projects-names-jumbo>h1>span{
+        border-bottom: 1px solid white;
+        font-size: 5vw;
+    }
+    
+    .projects-names-jumbo>p{
+        font-size: 4vw;
+        text-align: start;
+        margin-top: 6%;
+    }
+    
+    
+    #hway{
+        display: block;
+        width: 100%;
+    }
+
+    #more{
+        display: none;
+    }
+}
