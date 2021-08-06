@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../Projects/Projects.css';
 import { Jumbotron, Button } from 'react-bootstrap';
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 function openLink(n){
     if(n===1){
@@ -16,18 +18,25 @@ function openLink(n){
     }
 
     else if(n===4){
-        window.open("https://github.com/Prateek-Yashaswi/");
+        window.open("https://github.com/Prateek-Yashaswi/Portfolio");
     }
 
     else if(n===5){
         window.open("https://github.com/Prateek-Yashaswi/Payroll-Management-System");
     }
+
+    else if(n===6){
+        window.open("https://github.com/Prateek-Yashaswi/Random-Memes-Generator");
+    }
 }
 
 function Projects() {
+    useEffect(()=>{
+        Aos.init({duration:500});
+    },[]);
     return (
         <div id="projects">
-            <div id="projects-header">
+            <div id="projects-header"  data-aos="fade-up">
                 <h1>
                     <span id='projects-title'>My Projects</span>
                 </h1>
@@ -35,7 +44,7 @@ function Projects() {
 
             <div id="project-name">
             <div id="skin-cancer" className="project-details">
-                <Jumbotron className="projects-names-jumbo">
+                <Jumbotron className="projects-names-jumbo" data-aos="slide-up">
                     <h1><span>Skin Cancer Detection Application</span></h1>
                     <p>
                     Technologies Used: Flutter And TensorFlow Lite <br></br><br></br><br></br>
@@ -48,7 +57,7 @@ function Projects() {
             </div>
 
             <div id="xray">
-                <Jumbotron className="projects-names-jumbo">
+                <Jumbotron className="projects-names-jumbo" data-aos="slide-up">
                     <h1><span>X-Ray Vision</span></h1>
                     <p>
                     Technologies Used: ReactJS, Firebase, NodeJS, Heroku, PyTorch And Detectron2 <br></br><br></br>
@@ -61,7 +70,7 @@ function Projects() {
             </div>
 
             <div id="hway">
-                <Jumbotron className="projects-names-jumbo">
+                <Jumbotron className="projects-names-jumbo" data-aos="slide-up">
                     <h1><span>Highway Companion App</span></h1>
                     <p>
                     Technologies Used: Flutter <br></br>
@@ -78,13 +87,13 @@ function Projects() {
             <h1 id="more"><span>Scroll For More</span></h1>
             <div id="project-name" className='project-2'>
             <div id="skin-cancer" className="project-details">
-                <Jumbotron className="projects-names-jumbo">
-                    <h1><span>Automatic Fire Extinguisher</span></h1>
+                <Jumbotron className="projects-names-jumbo" data-aos="slide-up">
+                    <h1><span>Portfolio Website</span></h1>
                     <p>
-                    Mini-Project : Physics<br></br>
-                    Using Arduino 
+                    Technology Used: React<br></br>
+                    
                     <br></br><br></br>
-                    In Case Of Any Fire, Automatic Fire Extinguisher Detects The Class Of Fire (Class A, Class B, Class C, Class D, Class E) And Takes Appropriate Actions To Extinguish It As Soon As Possible Without Any Human Help.
+                    This Is My Portfolio website Which Provides Information About Me Including My Certifications, Skills, Projects And Achievements. This Can Be A Way For You To Reach Me Easily Just By Filling In The Details Along With The Message.
                     </p>
                     <p>
                         <Button className="github-btn-skin" variant="dark" onClick={()=>openLink(4)}>Know more</Button>
@@ -93,7 +102,7 @@ function Projects() {
             </div>
 
             <div id="xray">
-                <Jumbotron className="projects-names-jumbo">
+                <Jumbotron className="projects-names-jumbo" data-aos="slide-up">
                     <h1><span>Payroll Management System</span></h1>
                     <p>
                     Mini-Project : DBMS <br></br>
@@ -105,9 +114,20 @@ function Projects() {
                     </p>
                 </Jumbotron>
             </div>
-
-            <div id="hway">
                 
+            <div id="hway">
+            <Jumbotron className="projects-names-jumbo" data-aos="slide-up">
+            <h1><span>Reddit - Random Post API</span></h1>
+                    <p>
+                    Technology Used: React<br></br>
+                    
+                    <br></br><br></br>
+                    This Project Was Created While Learning ReactJS. It Is A WebApp Fetching Data From An API Which Looks For A Random Meme On Reddit And Displays It With Informations Like Title, SubReddit And Link To The Post Along With The Meme Itself.
+                    </p>
+                    <p>
+                        <Button className="github-btn-xray" variant="dark" onClick={()=>openLink(6)}>Know more</Button>
+                    </p>
+                </Jumbotron>
             </div>
             </div>
         </div>

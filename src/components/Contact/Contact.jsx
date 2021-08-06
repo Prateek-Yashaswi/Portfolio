@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Contact.css';
 import emailjs from 'emailjs-com';
 import { Button } from 'react-bootstrap';
@@ -6,6 +6,8 @@ import { Icon } from '@iconify/react';
 import instagramIcon from '@iconify-icons/brandico/instagram';
 import githubIcon from '@iconify-icons/cib/github';
 import linkedinFill from '@iconify-icons/akar-icons/linkedin-fill';
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 
 
@@ -20,6 +22,8 @@ function sendEmail(e) {
             console.log(error.text);
         });
     e.target.reset();
+
+    alert("Email Sent. Prateek Will Reach You Soon !!!");
 }
 
 function openSocial(n){
@@ -38,9 +42,12 @@ function openSocial(n){
 
 
 function Contact() {
+    useEffect(()=>{
+        Aos.init({duration:700});
+    },[]);
     return (
         <div id="contact">
-            <div id="form-div">
+            <div id="form-div" data-aos="fade-in">
                 <div id="contact-form-div">
                     <form className="contact-form" onSubmit={sendEmail}>
                         <h1>Contact Me</h1>

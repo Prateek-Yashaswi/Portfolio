@@ -12,17 +12,17 @@
     border-right: 1px solid white;
     flex-direction: column;
     width: 50%;
-    padding: 2%;
+    padding: 1%;
 }
 
 .description {
-    padding: 2%;
+    padding: 1%;
     display: flex;
     order: 0;
 }
 
 .acadamics {
-    padding: 3%;
+    padding: 2%;
 }
 
 .acadamics>h1 {
@@ -175,6 +175,11 @@ li {
     color: white;
     order: 3;
     width: 33%;
+}
+
+.resume {
+    color: white;
+    width: 100%;
 }
 
 @media only screen and (max-width: 600px) {

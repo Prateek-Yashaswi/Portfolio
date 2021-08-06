@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../About/About.css';
 import Button from 'react-bootstrap/Button';
 import { Container } from 'react-bootstrap';
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 function onClickGHub() {
     window.open("https://github.com/Prateek-Yashaswi/Skin-Cancer-Detection-App");
@@ -39,21 +41,29 @@ function onClickLink(n){
     else if(n===7){
         window.open("https://coursera.org/share/00b8f316531cfdd73cd71bcbacb76119");
     }
+
+    else if(n===8){
+        window.open("https://drive.google.com/u/0/uc?id=1Ue0ezygYc6HH6Vx8X6TehVWcoYguS_x4&export=download");
+    }
 }
 function About() {
+    useEffect(()=>{
+        Aos.init({duration:200});
+    },[]);
+
     return (
         <div id="about">
-            <div className="heading"><h1><span>About Me</span></h1></div>
+            <div className="heading" data-aos="fade-up"><h1><span>About Me</span></h1></div>
             <div id="total">
                 <div className="background">
-                    <div className="description">
+                    <div className="description" data-aos="slide-right">
                         <div className='description-text'>
                             <p>Hello There, <br></br><br></br>I am a Final year Student pursuing B.Tech in Computer Science and Engineering from SRM Institute of Science and Technology. I am currently working to enhance my skills in the field of Web and Application Development. I like to work with full determination and aim to deliver my work on time. Along with that, I am very eager to acquire knowledge about new concepts in the field of Technology. Few Things I Use To Counter Boredom Are Playing Online Games With Friends And Listening To Music.</p>
 
                         </div>
 
                     </div>
-                    <div className="acadamics">
+                    <div className="acadamics" data-aos="fade">
                         <h1><span>Education</span></h1>
                         <br></br>
                         <div id="school">
@@ -99,7 +109,7 @@ function About() {
                     </div>
                 </div>
                 <div className="achievements">
-                    <Container className="achievements-container">
+                    <Container className="achievements-container" data-aos="slide-left">
                         <h1>
                             <span>Achievements</span>
                         </h1>
@@ -113,7 +123,7 @@ function About() {
                         </div>
                     </Container>
                     <br></br><br></br><br></br>
-                    <Container className="achievements-container">
+                    <Container className="achievements-container"  data-aos="fade">
                         <h1>
                             <span>Certificates</span>
                         </h1>
@@ -156,6 +166,15 @@ function About() {
                             </div>
                         </div>                       
                     </Container>
+                    <br></br><br></br>
+                    <Container className="achievements-container"  data-aos="fade">
+                    <h1><span>Resume</span></h1>
+                    <br></br><br></br>
+                    <div className="resume">
+                    <p>Click The Button To Download My Resume</p>
+                    <Button variant="dark" size="sm" onClick={()=>onClickLink(8)}>Download Resume</Button>
+                    </div>
+                </Container>
                 </div>
             </div>
         </div>
