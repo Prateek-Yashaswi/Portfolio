@@ -52,15 +52,15 @@ function Contact() {
                     <form className="contact-form" onSubmit={sendEmail}>
                         <h1>Contact Me</h1>
                         <div class="info">
-                            <input class="fname" type="text" autocomplete="off" name="from_name" placeholder="Full name" />
-                            <input type="email" name="from_email" placeholder="Email" autocomplete="off" />
-                            <input type="number" name="from_phone" placeholder="Phone" autocomplete="off" />
-                            <input type="text" name="subject" placeholder="Subject" autocomplete="off" />
+                            <input class="fname" type="text" autocomplete="off" name="from_name" placeholder="Full name" required/>
+                            <input type="email" name="from_email" placeholder="Email" autocomplete="off" required/>
+                            <input type="number" name="from_phone" placeholder="Phone" autocomplete="off" required/>
+                            <input type="text" name="subject" placeholder="Subject" autocomplete="off" required/>
                         </div>
                         <br></br>
                         <p>Message</p>
                         <div>
-                            <textarea name="message" rows="4" autocomplete="off"></textarea>
+                            <textarea name="message" rows="4" autocomplete="off" required></textarea>
                         </div>
                         <div id="button-div">
                             <Button variant="dark" type="submit" id="submit-btn">Submit</Button>
