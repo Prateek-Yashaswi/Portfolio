@@ -9,6 +9,7 @@
 
 body {
   color: black;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -43,5 +44,12 @@ body {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    color: pink;
+    overflow-x: hidden;
   }
 }

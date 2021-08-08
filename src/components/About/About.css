@@ -4,6 +4,7 @@
     display: table;
     z-index: 99;
     margin: 0;
+    overflow: hidden;
     padding: 0;
 }
 

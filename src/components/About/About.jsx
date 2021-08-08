@@ -48,7 +48,7 @@ function onClickLink(n){
 }
 function About() {
     useEffect(()=>{
-        Aos.init({duration:200});
+        Aos.init({duration:200,});
     },[]);
 
     return (
@@ -56,14 +56,14 @@ function About() {
             <div className="heading" data-aos="fade-up"><h1><span>About Me</span></h1></div>
             <div id="total">
                 <div className="background">
-                    <div className="description" data-aos="slide-right">
+                    <div className="description" data-aos="slide-up">
                         <div className='description-text'>
                             <p>Hello There, <br></br><br></br>I am a Final year Student pursuing B.Tech in Computer Science and Engineering from SRM Institute of Science and Technology. I am currently working to enhance my skills in the field of Web and Application Development. I like to work with full determination and aim to deliver my work on time. Along with that, I am very eager to acquire knowledge about new concepts in the field of Technology. Few Things I Use To Counter Boredom Are Playing Online Games With Friends And Listening To Music.</p>
 
                         </div>
 
                     </div>
-                    <div className="acadamics" data-aos="fade">
+                    <div className="acadamics" data-aos="slide-up">
                         <h1><span>Education</span></h1>
                         <br></br>
                         <div id="school">
@@ -109,7 +109,7 @@ function About() {
                     </div>
                 </div>
                 <div className="achievements">
-                    <Container className="achievements-container" data-aos="slide-left">
+                    <Container className="achievements-container" data-aos="slide-up">
                         <h1>
                             <span>Achievements</span>
                         </h1>
@@ -123,7 +123,7 @@ function About() {
                         </div>
                     </Container>
                     <br></br><br></br><br></br>
-                    <Container className="achievements-container"  data-aos="fade">
+                    <Container className="achievements-container"  data-aos="slide-up">
                         <h1>
                             <span>Certificates</span>
                         </h1>
@@ -167,7 +167,7 @@ function About() {
                         </div>                       
                     </Container>
                     <br></br><br></br>
-                    <Container className="achievements-container"  data-aos="fade">
+                    <Container className="achievements-container"  data-aos="slide-up">
                     <h1><span>Resume</span></h1>
                     <br></br><br></br>
                     <div className="resume">
