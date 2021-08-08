@@ -43,11 +43,11 @@ function openSocial(n){
 
 function Contact() {
     useEffect(()=>{
-        Aos.init({duration:700});
+        Aos.init({duration:600});
     },[]);
     return (
-        <div id="contact">
-            <div id="form-div" data-aos="fade-in">
+        <div id="contact"  data-aos="zoom-in">
+            <div id="form-div">
                 <div id="contact-form-div">
                     <form className="contact-form" onSubmit={sendEmail}>
                         <h1>Contact Me</h1>
