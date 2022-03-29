@@ -7,6 +7,7 @@ import About from './components/About/About';
 import Technical from './components/Technical/Technical';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
+import Experience from './components/Experience/Experience';
 
 function App() {
   return (
@@ -24,6 +25,13 @@ function App() {
           to="about"
           dark={true}
           id="About"
+        />
+
+        <Experience
+          title="Experience"
+          to="experience"
+          dark={true}
+          id="experience"
         />
 
       <Technical

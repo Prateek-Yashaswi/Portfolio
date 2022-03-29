@@ -15,6 +15,7 @@ function Mynav() {
                 <ReactBootStrap.Nav className="ml-auto">
                 <Button variant="dark" className="navbar-button-custom"><Link to="home" spy={false} smooth={true} offset={-70} duration={300}>Home</Link></Button>
                 <Button variant="dark" className="navbar-button-custom"><Link to="about" spy={false} smooth={true} offset={-150} duration={300}>About</Link></Button>
+                <Button variant="dark" className="navbar-button-custom"><Link to="experience" spy={false} smooth={true} offset={-75} duration={300}>Experience</Link></Button>
                 <Button variant="dark" className="navbar-button-custom"><Link to="technical" spy={false} smooth={true} offset={-150} duration={300}>Technical Skills</Link></Button>
                 <Button variant="dark" className="navbar-button-custom"><Link to="projects" spy={false} smooth={true} offset={-180} duration={300}>Projects</Link></Button>
                 <Button variant="dark" className="navbar-button-custom"><Link to="contact" spy={false} smooth={true} offset={-50} duration={300}>Contact</Link></Button>

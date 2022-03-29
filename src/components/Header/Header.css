@@ -32,7 +32,7 @@ h4>span{
 .avatar {
     margin: auto;
     margin-bottom: 3vh;
-    background-image: url('../Header/prateek.jpg');
+    background-image: url('https://www.gravatar.com/avatar/0d183c67c0342096e1f9612083f9405d?s=2048');
     width: 250px;
     height: 250px;
     background-size: cover;

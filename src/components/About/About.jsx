@@ -58,7 +58,7 @@ function About() {
                 <div className="background">
                     <div className="description" data-aos="slide-up">
                         <div className='description-text'>
-                            <p>Hello There, <br></br><br></br>I am a Final year Student pursuing B.Tech in Computer Science and Engineering from SRM Institute of Science and Technology. I am currently working to enhance my skills in the field of Web and Application Development. I like to work with full determination and aim to deliver my work on time. Along with that, I am very eager to acquire knowledge about new concepts in the field of Technology. Few Things I Use To Counter Boredom Are Playing Online Games With Friends And Listening To Music.</p>
+                            <p>Hello there, <br></br><br></br>I am a final year student pursuing B.Tech in Computer Science And Engineering from SRM Institute Of Science And Technology. I am currently working with Danske IT as an Intern. I like to work with full determination and aim to deliver my work on time. Along with that, I am very eager to acquire knowledge about new concepts in the field of technology. Few things I use to counter boredom are playing online games with friends and listening to music.</p>
 
                         </div>
 
@@ -114,7 +114,7 @@ function About() {
                             <span>Achievements</span>
                         </h1>
                         <div className="achievement-desc">
-                            <p>  Me Along With 3 Other Students Took Part In An Online Hackathon Named AGBI Healthtech Grand Challenge Under The Team Name "Health Fanatics". We Made A Skin Cancer Detection Mobile Application Using Flutter And Managed To Win The Second Prize And An Incubation Offer With AGBI.
+                            <p>Me along with 3 other friends took part in an Online Hackathon named AGBI Healthtech Grand Challenge under the team name "Health Fanatics". We made Skin Cancer Detection Mobile Application using Flutter and managed to win the second prize and an incubation offer with AGBI.
                               </p>
                         </div>
                         <div className="achievement-button">
